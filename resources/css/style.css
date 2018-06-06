@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+}
+
+/* header elements */
+
+header {
+  display: flex;
+  width: 100%
+  height: 80px;
+  align-items: center;
+  background-color: white;
+  height: 80px;
+  border-bottom: 1px solid black;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  color: MediumAquamarine;
+  position: fixed;
+  z-index: 1;
+}
+
+#top {
+  display: flex; /* div within header that's also a flex */
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+#top h1 {
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: black;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+/* end header elements */
+
+/* main content elements */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 1232px; /* best to claim an actual width */
+  margin: 0 auto 78px auto; /* spacing of actual content boxes */
+  padding-top: 50px;
+}
+
+.column {
+  display: flex; /* both child and parent need to claim flex */
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.large {
+  /* this combines column class with large. should be writtern as "column large" in html */
+  width: 630px;
+}
+
+.column.medium {
+  /* this combines column class with medium. should be writtern as "column medium" in html */
+  width: 300px;
+}
+
+.column.small {
+  /* this combines column class with small. should be writtern as "column small" in html */
+  width: 240px;
+}
+/* end main content elements */
