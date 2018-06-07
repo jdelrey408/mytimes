@@ -4,9 +4,18 @@
 
 /* header elements */
 
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+}
+
 header {
   display: flex;
-  width: 100%
+  width: 100%;
   height: 80px;
   align-items: center;
   background-color: white;
@@ -59,7 +68,7 @@ nav span {
   justify-content: space-between;
   width: 1232px; /* best to claim an actual width */
   margin: 0 auto 78px auto; /* spacing of actual content boxes */
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .column {
@@ -83,3 +92,143 @@ nav span {
   width: 240px;
 }
 /* end main content elements */
+
+/* start large column elements */
+
+#main-story {
+  /* all flex elements for the text were made in this section */
+  background-image: url("./main-story.png");
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-text {
+  font-family: Georgia;
+  font-weight: bold;
+  color: white;
+  margin-left: 20px; /* this is what actually mvoed content to center after justifying content in main-story */
+}
+
+.columntext {
+  margin: 16px 0px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+#bottom-column-large {
+  /* this is the flex container for the two bottom columns */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.bottom {
+  /* this is the child flex items for the container */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+#bottom-image-left {
+  /* container for large column bottom image left */
+  background-image: url("./fall-season.png");
+  margin-top: 10;
+  font-size: 30px;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bottom-image-right {
+  /* container for large column bottom image left */
+  background-image: url("./cameraman.png");
+  margin-top: 10;
+  font-size: 30px;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bottom-image-center {
+  /* container for large column bottom image left */
+  background-image: url("./cat-ceo.png");
+  margin-top: 10;
+  font-size: 30px;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-image-text {
+  /* REUSABLE throughout project. this holds the text in the smaller image */
+  font-family: Georgia;
+  font-weight: bold;
+  color: white;
+}
+
+/* start right column elements */
+
+.news-bites h3 {
+  margin-bottom: 41px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bites {
+  display: block;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+/* end right column elements */
+
+/* start footer elements */
+
+footer {
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 325px;
+}
+
+#footer-flex {
+  display: inline-block; /* this sets the inline block for both title and footer nav */
+}
+
+.title {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
